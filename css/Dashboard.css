@@ -1,0 +1,247 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ############################## Header ##########################*/
+.navbar{
+    height: 121px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.container-fluid {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar button {
+    border: none;
+    background-color: transparent;
+}
+.admin{
+    display: flex;
+    align-items: center;
+}
+.admin a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #A0A0A0;
+
+}
+.admin img{
+    margin-left: 15px;
+}
+
+
+
+/* ################################### section styling ################################ */
+
+section{
+    background: #D9E2ED;
+}
+
+
+.left_side{
+    min-height:100vh;
+    height: 100%;
+    width: 120px;
+    padding: 0%;
+    background: #002C58;
+}
+.left_side a {
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+   
+}
+
+#dashboard, #users{
+    height: 120px;
+    border-bottom: 1px solid gray;
+}
+.nunito{
+    font-family: 'Nunito';
+}
+.dashboard_body{
+    width: 100%;
+    background-color: #D9E2ED;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: transparent;
+}
+hr{
+    background-color: #55AFFF;
+}
+.border_class {
+    border-left:4px solid transparent;
+}
+.border_class:hover {
+    border-left:4px solid rgb(0, 162, 255);
+}
+.border_class img{
+    width: 25px;
+}
+/* ##############################upper side styling ######################################*/
+
+
+.upper_side{
+    /* border: 2px solid black; */
+    height:150px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+}
+
+.upper_side h2{
+    font-size: 50px;
+    font-weight: 200;
+    color: #858585;
+    margin: 0;
+}
+.monstrrate{
+    font-family: 'Montserrat';
+}
+.lower_side{
+    height:auto;
+    width: 100%;
+    margin: auto;
+    padding-top:15px;
+}
+
+
+
+/* ######################### DASHBOARD MEMBERS CSS ########################### */
+
+
+#members{
+    /* border: 2px solid brown; */
+    max-width: 378px;
+    width: 100%;
+    height: 212px;
+    background:#fff;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#members img{
+    width: 40px;
+}
+#members h4{
+    font-size: 18px;
+    font-weight:bold;
+}
+#members h2{
+    font-size: 31px;
+    font-weight:500;
+}
+
+
+@media screen and (max-width:768px) {
+
+    #members{
+        width: 50%;
+    }
+    .for-height{
+        /* max-width: 1368px; */
+        width: 85%;
+        margin: auto;
+    }
+    .dashboard_heading h2{
+        font-size: 40px;
+        margin: 0;
+    }
+}
+@media screen  and (max-width:480px){
+    .navbar{
+        height: 70px;
+        padding: 0 !important;
+    }
+    .main_logo img{
+        width: 170px;
+    }
+    #members{
+        width: 100%;
+        height: 150px;
+    }
+    .upper_side div h2{
+        font-size: 30px;
+        margin: 0;
+    }
+    .for-height{
+        width: 100%;
+    }
+    .side_bar{
+        max-width: 70px;
+        width:100%;
+    }
+    #users div ,
+    #dashboard div{
+        width: 25px;
+        height: 25px;
+      
+    }
+    #dashboard, #users{
+        width:70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #users div a,
+    #dashboard div a{
+        font-size:12px;
+    }
+    .dashboard_body{
+        padding:19px !important;
+    }
+    .upper_side{
+        /* border: 2px solid black; */
+        height:80px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:992px) {
+    #displaying_items h6{
+        font-size: 15px;
+       
+    }
+ 
+    
+}
+
+@media screen and (max-width:768px) {
+  
+.dashboard_body {
+    width: 85%;
+    background-color: #D9E2ED;
+}
+.side_bar {
+    max-width: 70px;
+    width: 100%;
+} 
+.table-main {
+    overflow-x: scroll;
+}
+hr {
+    margin-top: 89px !important;
+    margin-bottom: 0px;
+}
+.table-main table {
+    min-width: 700px;
+}
+hr.mt-5.table {
+    margin-top: 90px !important;
+    margin-bottom: 0px;
+}
+}

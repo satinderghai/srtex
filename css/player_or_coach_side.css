@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.login-upper{
+    min-height: 100vh;
+    height:auto;
+    background-image: url(../images/Launch_2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.top-side-logo {
+    max-width: 561px;
+    width: 100%;
+    height: 122px;
+}
+.form-container {
+    max-width:932px;
+    width: 100%;
+    height: 612px;
+    background: #9e9e9e6b;
+    opacity: 65%; 
+   border: 1px solid #ffffff47;
+    border-radius: 10px;   
+}
+
+.continue_button{
+    height: 79px;
+    width: 100%;
+    max-width: 546px;
+    border-style: none;
+    color: #ffffff;
+    background-color:#051821;
+    font-size: 18px;
+    font-weight: bold;
+}
+.player_side{
+    object-fit: contain;
+    /* max-width: 348px;
+    width: 100%;
+    height: 320px; */
+}
+.coach_side{
+    object-fit: contain;
+    /* max-width: 348px;
+    width: 100%;
+    height: 320px; */
+}
+.i_am_player>h2,
+.i_am_coach>h2{
+    font-size: 68px;
+    font-family: 'League Gothic';
+    color: #ffffff;
+}
+.PLAYER_OR_A_COACH_TEXT{
+    font-family: 'League Gothic';
+    color: #ffffff;
+    font-size: 84px;
+
+}
+.team-text>p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.team-code-input{
+    max-width: 546px;
+    width: 100%;
+    height: 68px;
+    padding-left: 8%;
+}
+.team-code {
+    position: relative;
+    width: 546px;
+}
+.team-code>img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.form-container {
+    padding: 20px;
+}
+
+
+@media screen and ( max-width:1440px ) {
+    span.lunch_login-title.active-form {
+    font-size: 100px;
+}
+.unactive-form:hover {
+    font-size: 100px !important;
+}
+.top-side-logo {
+    max-width: 325px;
+    height: auto;
+}
+.PLAYER_OR_A_COACH_TEXT {
+    font-size: 53px;
+    margin-bottom: 20px;
+}
+.form-container {
+    min-height: 390px;
+    height: auto;
+}
+
+}
+
+
+@media screen and ( max-width:768px ) {
+.row.form-titles {
+    margin-top: 20%;
+}
+}

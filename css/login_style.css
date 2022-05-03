@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.login-upper{
+    min-height: 100vh;
+    height:auto;
+    background-image: url(../images/Launch_2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+span.lunch_login-title {
+    /* font-size: 76px; */
+    font-size: 83px;
+}
+
+span.lunch_login-title.active-form  {
+    /* font-size: 85px; */
+    font-size: 161px;
+}
+.unactive-form:hover{
+    font-size: 140px !important;
+    transition: 0.5s;
+
+}
+.unactive-form::before{
+    /* position: absolute; */
+    content: "";
+    font-size: 145px;
+    opacity: 50%;
+}
+.active-form{
+    font-family: 'League Gothic';
+    
+}
+.unactive-form{
+    font-family: 'League Gothic';
+    font-size: 104px;
+    opacity: 30%;
+    margin-left: 50px;
+}
+.row.form-titles {
+    margin-top: -6%;
+}
+
+
+
+.top-side-logo {
+    max-width: 561px;
+    width: 100%;
+    height: 122px;
+}
+.form-container {
+    max-width:1193px;
+    width: 100%;
+    height: 612px;
+    background: #9e9e9e6b; 
+       border: 1px solid #ffffff47;
+    border-radius: 10px;   
+}
+.form-content{
+    max-width: 863px;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+.email,
+.password{
+    position: relative;
+}
+.email img,
+.password img{
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+#email-input,
+#password-input{
+    max-width: 863px;
+    width: 100%;
+    height: 68px;
+        background-color: #ffffff5e;
+        border: none;
+    padding-left: 8%;
+}
+.forget-link{
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'League Gothic';
+    /* visibility: hidden; */
+}
+.forget-link::after{
+    content: "";
+    font-size: 33px;
+
+}
+.forget-link:hover{
+    font-size: 32px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.login-button{
+    height: 79px;
+    width: 100%;
+    max-width: 546px;
+    border-style: none;
+    color: #ffffff;
+    background-color:#051821;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* SIGN UP */
+.signup .form-container {
+    min-height: 512px;
+    height: auto;
+    padding:20px 0px;
+}
+.signup #email-input, .signup #password-input, .signup #password-input {
+    padding-left: 7%;
+}
+
+.signup .input_group #email-input, .signup .input_group #password-input {
+    padding-left: 15%;
+}
+.form-container {
+    border-radius: 10px;
+}
+
+
+/* fORGET pass */
+.forget_pass span.lunch_login-title.active-form {
+    font-size: 83PX;
+}
+.forget_pass span.lunch_login-title {
+    /* font-size: 76px; */
+    font-size: 53px;
+}
+.forget_pass .unactive-form:hover {
+    font-size: 70px !important;
+    transition: 0.5s;
+}
+
+
+@media screen and ( max-width:1440px ) {
+    .form-container {
+        max-width: 960px;
+        width:100%;
+        height: 512px;
+    }
+    span.lunch_login-title.active-form {
+    font-size: 100px;
+}
+.unactive-form:hover {
+    font-size: 100px !important;
+}
+.top-side-logo {
+    max-width: 325px;
+    height: auto;
+}
+}
+@media screen and ( max-width:1024px ) {
+    .form-container {
+        max-width: 768px;
+        width:100%;
+        width: 100%;
+        height: 512px;
+    }
+    .form-content{
+        width: 80%;
+    }
+    span.lunch_login-title {
+        /* font-size: 76px; */
+        font-size: 80px;
+    }
+    
+    span.lunch_login-title.active-form  {
+        /* font-size: 85px; */
+        font-size: 120px;
+    }
+    .unactive-form:hover{
+        font-size: 140px !important;
+        transition: 0.5s;
+    
+    }
+    .unactive-form::before{
+        /* position: absolute; */
+        content: "";
+        font-size: 145px;
+        opacity: 50%;
+    }
+
+}
+@media screen and ( max-width:960px ) {
+    .form-container {
+        height: 412px;
+    }
+    #email-input, #password-input {
+        padding-left: 12%;
+    }
+    .signup #email-input, .signup #password-input, .signup #password-input {
+        padding-left: 9%;
+    }
+    
+    .signup .input_group #email-input, .signup .input_group #password-input {
+        padding-left: 18%;
+    }
+   
+}
+
+@media screen and ( max-width:576px ) {
+    span.lunch_login-title {
+        /* font-size: 76px; */
+        font-size: 70px;
+    }
+    
+    span.lunch_login-title.active-form  {
+        /* font-size: 85px; */
+        font-size: 100px;
+    }
+    .unactive-form:hover{
+        font-size: 100px !important;
+        transition: 0.5s;
+    
+    }
+    .unactive-form::before{
+        /* position: absolute; */
+        content: "";
+        font-size: 100px;
+        opacity: 50%;
+    }
+}
+@media screen and ( max-width:576px ) {
+    span.lunch_login-title {
+        /* font-size: 76px; */
+        font-size: 40px;
+    }
+    
+    span.lunch_login-title.active-form  {
+        /* font-size: 85px; */
+        font-size: 70px;
+    }
+    .unactive-form:hover{
+        font-size: 70px !important;
+        transition: 0.5s;
+    
+    }
+    .unactive-form::before{
+        /* position: absolute; */
+        content: "";
+        font-size: 70px;
+        opacity: 50%;
+    }
+    .form-container {
+        display: flex;
+        align-items: center;
+    }
+    .form-content {
+        width: 100%;
+    }
+    #email-input, #password-input {
+        padding-left: 18%;
+        margin-bottom: 10px;
+    }
+    .signup #email-input, .signup #password-input, .signup #password-input {
+        padding-left: 13%;
+    }
+    
+    .signup .input_group #email-input, .signup .input_group #password-input {
+        padding-left: 13%;
+    }
+}
